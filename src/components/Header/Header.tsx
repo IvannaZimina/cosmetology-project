@@ -1,15 +1,13 @@
 import { FC } from "react";
-import { NavLink } from "react-router-dom";
+import { NavigationBar } from "./navigation-bar"
+import style from "./style.module.scss";
 
 const Header: FC = () => {
+
     return (
-        <>
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/about-me">About Me</NavLink>
-            <NavLink to="/servicies">Services</NavLink>
-            <NavLink to="/home-care">Home Care</NavLink>
-            <NavLink to="/contact-me">Contact Me</NavLink>
-        </>
+        <header className={style.headerContainer}>
+            <NavigationBar />
+        </header>
     );
 };
 

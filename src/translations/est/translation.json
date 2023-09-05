@@ -1,0 +1,11 @@
+{
+    "main": {
+        "header": {
+            "home": "Koduleht",
+            "aboutMe": "Tutvustada",
+            "servicies": "Lisateenused",
+            "homeCare": "Koduhooldus",
+            "contactMe": "Kontaktid"
+        }
+    }
+}

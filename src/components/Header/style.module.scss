@@ -1,0 +1,92 @@
+.headerContainer {
+    padding: 20px;
+    background-color: #ffffff00;
+    position: fixed;
+    width: 98%;
+
+}
+
+.navigationBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    .homeNavBtn {
+        width: 50px;
+        text-decoration: none;
+    }
+
+    .navLinksContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 60%;
+
+        .homePageIcon {
+            width: 40px;
+            height: 40px;
+
+            &:hover {
+                box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.773);
+            }
+        }
+
+        .headerLink {
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #000000;
+            display: inline-block;
+            position: relative;
+
+            &:hover::after {
+                text-decoration: underline;
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                transform: scaleX(0);
+                height: 1.5px;
+                bottom: -3px;
+                left: 0;
+                background-color: #00000070;
+                transform-origin: bottom right;
+                transition: transform 0.3s ease-out;
+            }
+        }
+    }
+
+    .languageBtnContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 130px;
+
+        .changeLanguageBtn {
+            border: none;
+            outline: none;
+            border: transparent;
+            padding: 3px;
+            margin-top: 2px;
+            height: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            text-transform: uppercase;
+
+            &:focus-visible {
+                border: none;
+                outline: none;
+                border: transparent;
+            }
+
+            .flag {
+                height: 30px;
+            }
+        }
+    }
+}
